@@ -13,16 +13,17 @@ btn.addEventListener("click", function () {
     let arrayCognomi = ["Rossi", "Ferrari", "Russo", "Bianchi", "Romano", "Gallo", "Costa","Bianchi","Pinoli","Franchi"];
 
     for (let i = 0; i < 10; i++) {
+        
         let rand = Math.floor(Math.random() * arrayNomi.length);
         let nomeCasuale = arrayNomi[rand];
         console.log(nomeCasuale);
 
-        // messaggio.innerHTML = "Il nome generato è " + nomeCasuale;
+
 
         let rand2 = Math.floor(Math.random() * arrayNomi.length);
         let cognomeCasuale = arrayCognomi[rand2];
         console.log(cognomeCasuale);
-        // messaggio2.innerHTML = "Il cognome generato è " + cognomeCasuale;
+
 
         arrayInvitati.push(nomeCasuale + ' ' + cognomeCasuale);
 
