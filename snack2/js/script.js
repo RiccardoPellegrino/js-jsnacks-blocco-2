@@ -5,12 +5,13 @@ let messaggio = document.querySelector('.messaggio');
 let messaggio2 = document.querySelector('.messaggio2');
 let btn = document.getElementById("generatore");
 
-let arrayInvitati = [];
+
 
 btn.addEventListener("click", function () {
+    let arrayInvitati = [];
     document.querySelector('#inventato').innerHTML = '';
     let arrayNomi = ["Riccardo", "Simone", "Stefano", "Mattia", "Stefania", "Michela", "Giulia","Manuel", "Selenia","Giancarlo"];
-    let arrayCognomi = ["Rossi", "Ferrari", "Russo", "Bianchi", "Romano", "Gallo", "Costa","Bianchi","Pinoli"];
+    let arrayCognomi = ["Rossi", "Ferrari", "Russo", "Bianchi", "Romano", "Gallo", "Costa","Bianchi","Pinoli","Franchi"];
 
     for (let i = 0; i < 10; i++) {
         let rand = Math.floor(Math.random() * arrayNomi.length);
